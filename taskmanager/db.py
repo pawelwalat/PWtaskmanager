@@ -3,7 +3,7 @@ import json
 import prettytable
 import os
 
-MIGRATION_FILE = os.path.join(os.path.dirname(__file__), '/dbmigrations.json')
+MIGRATION_FILE = os.path.dirname(__file__)+'/dbmigrations.json'
 
 sqls = {'check_migrations_exists': "SELECT count(*) FROM sqlite_master WHERE type ='table' AND upper(name) = 'MIGRATION'",
         'find_last_migration': "SELECT coalesce(max(migration_id),0) FROM migration",
