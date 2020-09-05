@@ -1,0 +1,5 @@
+{"migrations":[
+    {"id":1, "version":"0.1", "sql":"CREATE TABLE migration (migration_id integer NOT NULL PRIMARY KEY, version text NOT NULL, sql text NOT NULL, date_created timestamp NOT NULL)"},
+    {"id":2, "version":"0.1", "sql":"CREATE TABLE tasks(ID integer primary key autoincrement not null, INSTANCE_ID  integer, GROUP_ID integer, STATUS  VARCHAR default 'NEW', NAME  VARCHAR, tasktype VARCHAR, DEFINITION TEXT,PARAMETERS   TEXT,CREATEDATE    DATE, STARTDATE    DATE, RESUMEDATE    DATE,ENDDATE      DATE,RETRIES NUMBER,LOG          TEXT)"}
+]
+}
